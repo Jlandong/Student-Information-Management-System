@@ -84,6 +84,15 @@
       }
     }
 
+    function joinStudents() {
+      if (students.length === 0) {
+        document.getElementById("output").innerText = "No students to join.";
+      } else {
+        let joined = students.join(", ");
+        document.getElementById("output").innerHTML =
+          "<strong>Joined Students:</strong> " + joined;
+      }
+    }
 
   </script>
 </html>
